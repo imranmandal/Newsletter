@@ -35,9 +35,10 @@
   };
 
   const jsonData = JSON.stringify(data);
+//  https://usX.api.mailchimp.com/3.0/lists
   // https://us10.api.mailchimp.com/3.0/lists/c540e442d7
  // https://<dc>.api.mailchimp.com/export/1.0/list/
-  const url = "https://us10.api.mailchimp.com/export/1.0/list/c540e442d7";
+  const url = "https://usX.api.mailchimp.com/3.0/lists/c540e442d7";
 
   const options = {
     method: "POST",
