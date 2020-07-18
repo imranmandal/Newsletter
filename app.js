@@ -35,8 +35,8 @@
   };
 
   const jsonData = JSON.stringify(data);
-//  https://usX.api.mailchimp.com/3.0/lists
-  // https://us10.api.mailchimp.com/3.0/lists/c540e442d7
+ // https://usX.api.mailchimp.com/3.0/lists
+ // https://us10.api.mailchimp.com/3.0/lists/c540e442d7
  // https://<dc>.api.mailchimp.com/export/1.0/list/
   const url = "https://us10.api.mailchimp.com/3.0/lists/c540e442d7";
 
@@ -45,7 +45,7 @@
     auth: "imran:0007b924d7e61a7d152af7d4c90a2b30-us10",
   }
 
-  const request = https.request(url,options,function (response) {
+  const request = https.request(url, options, function (response) {
     response.on("data", function (data) {
       console.log(JSON.parse(data));
 
@@ -57,7 +57,7 @@
     })
   });
 
-  // request.write(jsonData);
+  request.write(jsonData);
   request.end();
 
   });
