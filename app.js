@@ -42,7 +42,7 @@
 
   const options = {
     method: "POST",
-    auth: "imran9:0007b924d7e61a7d152af7d4c90a2b30-us10",
+    auth: "imran:0007b924d7e61a7d152af7d4c90a2b30-us10",
   }
 
   const request = https.request(url,options,function (response) {
