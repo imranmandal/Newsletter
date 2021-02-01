@@ -2,6 +2,11 @@
   //jshint esversion: 6
 
 
+
+
+
+
+
   const express = require('express');
   const bodyParser = require('body-parser');
   const request = require('request');
@@ -35,7 +40,7 @@
   };
 
   const jsonData = JSON.stringify(data);
-  
+
   const url = "https://us10.api.mailchimp.com/3.0/lists/c540e442d7";
 
   const options = {
